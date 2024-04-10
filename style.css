@@ -1,0 +1,430 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: black;
+	display: flex;
+	padding-left: 10px;
+}
+
+nav {
+	margin: 30px;
+}
+
+.navigation {
+	color: #B0B0B0;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 32px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.new-book {
+	color: #FFFFFF;
+	background-image: url("https://i.pinimg.com/564x/e6/79/78/e679785d176e5f1a622d6d08bf4b26ea.jpg");
+	padding-left: 10px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+@media  only screen and (max-width: 900px) {
+	.new-book {
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	}
+	.silver-descrip {
+		display: none;
+	}
+	#new-book-img {
+		max-width: 100%;
+	}
+}
+
+
+#new-book-img {
+	width: 350px;
+}
+
+
+.chaos-series {
+	background-color: #EEEBDD;
+	color: #483939;
+	padding-top: 20px;
+}
+
+#chaos-text {
+	display: flex;
+	justify-content: center;
+	font-size: 64px;
+	font-weight: normal;
+}
+
+#chaos-books {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	padding-bottom: 70px;
+}
+
+.other-series {
+	background-color: #EEEBDD;
+	color: #483939;
+}
+
+#other-text {
+	display: flex;
+	justify-content: center;
+	font-size: 52px;
+	font-weight: normal;
+}
+
+#other-books {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	padding-bottom: 70px;
+}
+
+.feedback-form {
+	background-color: #756961;
+	color: #BEB8A2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-size: 28px;
+}
+
+#news-text {
+	max-width: 50%;
+}
+
+/* Style the form container */
+#feedbackForm {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the form labels */
+#feedbackForm label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Style the form input fields */
+#feedbackForm input[type="text"],
+#feedbackForm input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style the form submit button */
+#feedbackForm button {
+  background-color: #BEB8A2;
+  color: #756961;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the form submit button on hover */
+#feedbackForm button:hover {
+  background-color: #d6cba1;
+}
+
+footer {
+	background-color: #444444;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 20px 30px 40px;
+}
+
+.foot-nav1 {
+	color: #B0B0B0;
+	text-decoration: none;
+	font-size: 24px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.foot-nav-small {
+	color: #B0B0B0;
+	text-decoration: none;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.foot-nav2 {
+	color: #B0B0B0;
+	text-decoration: none;
+	font-size: 24px;
+	display: flex;
+	flex: 2;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.silver-desc {
+	flex: 1;
+	max-width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 30px 20px 10px 45px;
+	font-size: 30px;
+	color: #D5D5D5;
+}
+
+.image-box {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 20px;
+}
+
+#find-text  {
+	font-size: 30px;
+	margin: 20px;
+}
+
+h3 {
+	font-family: fantasy;
+	font-weight: normal;
+	color: #D2EFFF;
+	font-size: 40px;
+}
+
+#meet-book {
+	font-weight: normal;
+	color: ghostwhite;
+}
+
+
+.book-shop {
+	background-color: black;
+	color: ghostwhite;
+}
+
+#buy-books {
+	display: flex;
+	justify-content: center;
+	font-size: 52px;
+	font-weight: normal;
+}
+
+.pricing-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pricing-carousel::-webkit-scrollbar {
+  width: 10px;
+}
+
+.book {
+  flex: 0 0 auto;
+  width: 500px;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  font-family: fantasy;
+  font-size: 36px;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#buy-books {
+	font-family: fantasy;
+	color: #lightblue;
+}
+button {
+  background-color: #6a97b0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#banner {
+    position: relative;
+    height:1000px;
+    width:100%;
+    overflow: hidden;
+    color: ghostwhite;
+}
+
+#odeon {
+	position: absolute;
+	font-family: fantasy;
+	font-weight: normal;
+	top: 45%;
+	left: 52%;
+	transform: translate(-55%, -48%);
+	font-size: 52px;
+}
+
+#odeon-desc {
+	position: absolute;
+	width: 700px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-40%, -50%);
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}
+
+
+@media only screen and (max-width: 900px) {
+.navigation {
+        display: none;
+    }
+
+  .dropdown {
+        display: block;
+    }
+
+ .dropbtn {
+  background-color: black; /* Changed background color to black */
+  color: white;
+  padding: 20px; /* Increased padding for larger size */
+  font-size: 20px; /* Increased font size for larger size */
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #333; /* Darker shade of black on hover */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed; /* Make the dropdown fixed */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black; /* Changed background color to black */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white; /* Changed link color to white */
+  padding: 16px; /* Adjusted padding for larger size */
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #333; /* Darker shade of black on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #333; /* Darker shade of black when dropdown is shown */
+}
+
+.new-book,
+    .chaos-series,
+    .other-series,
+    .feedback-form {
+        padding: 20px;
+    }
+
+    .image-box img,
+    #chaos-books img,
+    #other-books img {
+        width: 60%;
+        max-width: 60%;
+        height: auto;
+        margin: 10px;
+    }
+
+    #chaos-books,
+    #other-books {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #feedbackForm {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #feedbackForm label,
+    #feedbackForm input,
+    #feedbackForm button {
+        width: 100%;
+    }
+}
+}
